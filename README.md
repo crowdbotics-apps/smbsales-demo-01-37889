@@ -63,6 +63,7 @@ This section will show any installed modules you add from the Storyboard Modules
 - [react-native-onboarding](modules/onboarding)
 - [react-native-social-login](modules/social-login)
 - [payments]()
+- [react-native-maps](modules/maps)
 
 # Getting started: Frontend
 
