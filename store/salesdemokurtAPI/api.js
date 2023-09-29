@@ -7,7 +7,7 @@ function api_v1_login_create(payload) {
   return salesdemokurtAPI.post(`/api/v1/login/`)
 }
 function api_v1_signup_create(payload) {
-  return salesdemokurtAPI.post(`/api/v1/signup/`, payload.data)
+  return salesdemokurtAPI.post(`/api/v1/signup/`, payload)
 }
 function modules_payments_get_payments_history_list(payload) {
   return salesdemokurtAPI.get(`/modules/payments/get_payments_history/`)
@@ -19,40 +19,25 @@ function modules_payments_payment_sheet_create(payload) {
   return salesdemokurtAPI.post(`/modules/payments/payment_sheet/`)
 }
 function modules_social_auth_apple_connect_create(payload) {
-  return salesdemokurtAPI.post(
-    `/modules/social-auth/apple/connect/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/modules/social-auth/apple/connect/`, payload)
 }
 function modules_social_auth_apple_login_create(payload) {
-  return salesdemokurtAPI.post(
-    `/modules/social-auth/apple/login/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/modules/social-auth/apple/login/`, payload)
 }
 function modules_social_auth_facebook_connect_create(payload) {
   return salesdemokurtAPI.post(
     `/modules/social-auth/facebook/connect/`,
-    payload.data
+    payload
   )
 }
 function modules_social_auth_facebook_login_create(payload) {
-  return salesdemokurtAPI.post(
-    `/modules/social-auth/facebook/login/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/modules/social-auth/facebook/login/`, payload)
 }
 function modules_social_auth_google_connect_create(payload) {
-  return salesdemokurtAPI.post(
-    `/modules/social-auth/google/connect/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/modules/social-auth/google/connect/`, payload)
 }
 function modules_social_auth_google_login_create(payload) {
-  return salesdemokurtAPI.post(
-    `/modules/social-auth/google/login/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/modules/social-auth/google/login/`, payload)
 }
 function modules_social_auth_socialaccounts_list(payload) {
   return salesdemokurtAPI.get(`/modules/social-auth/socialaccounts/`)
@@ -60,11 +45,11 @@ function modules_social_auth_socialaccounts_list(payload) {
 function modules_social_auth_socialaccounts_disconnect_create(payload) {
   return salesdemokurtAPI.post(
     `/modules/social-auth/socialaccounts/${payload.id}/disconnect/`,
-    payload.data
+    payload
   )
 }
 function rest_auth_login_create(payload) {
-  return salesdemokurtAPI.post(`/rest-auth/login/`, payload.data)
+  return salesdemokurtAPI.post(`/rest-auth/login/`, payload)
 }
 function rest_auth_logout_list(payload) {
   return salesdemokurtAPI.get(`/rest-auth/logout/`)
@@ -73,34 +58,28 @@ function rest_auth_logout_create(payload) {
   return salesdemokurtAPI.post(`/rest-auth/logout/`)
 }
 function rest_auth_password_change_create(payload) {
-  return salesdemokurtAPI.post(`/rest-auth/password/change/`, payload.data)
+  return salesdemokurtAPI.post(`/rest-auth/password/change/`, payload)
 }
 function rest_auth_password_reset_create(payload) {
-  return salesdemokurtAPI.post(`/rest-auth/password/reset/`, payload.data)
+  return salesdemokurtAPI.post(`/rest-auth/password/reset/`, payload)
 }
 function rest_auth_password_reset_confirm_create(payload) {
-  return salesdemokurtAPI.post(
-    `/rest-auth/password/reset/confirm/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/rest-auth/password/reset/confirm/`, payload)
 }
 function rest_auth_registration_create(payload) {
-  return salesdemokurtAPI.post(`/rest-auth/registration/`, payload.data)
+  return salesdemokurtAPI.post(`/rest-auth/registration/`, payload)
 }
 function rest_auth_registration_verify_email_create(payload) {
-  return salesdemokurtAPI.post(
-    `/rest-auth/registration/verify-email/`,
-    payload.data
-  )
+  return salesdemokurtAPI.post(`/rest-auth/registration/verify-email/`, payload)
 }
 function rest_auth_user_read(payload) {
   return salesdemokurtAPI.get(`/rest-auth/user/`)
 }
 function rest_auth_user_update(payload) {
-  return salesdemokurtAPI.put(`/rest-auth/user/`, payload.data)
+  return salesdemokurtAPI.put(`/rest-auth/user/`, payload)
 }
 function rest_auth_user_partial_update(payload) {
-  return salesdemokurtAPI.patch(`/rest-auth/user/`, payload.data)
+  return salesdemokurtAPI.patch(`/rest-auth/user/`, payload)
 }
 export const apiService = {
   api_v1_login_create,
